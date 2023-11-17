@@ -5,6 +5,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CardPage from "./components/HomeComponent/CardPage";
 import FormPage from "./components/FormComponent/FormPage";
 import { Navbar } from "./components/HeaderComponent/Navbar";
+import { Footer } from "./components/FooterComponent/Footer";
+
+
+
 
 function App() {
   return (
@@ -16,9 +20,11 @@ function App() {
             <Route path="/" element={<FormPage />} />
             <Route path="/card" element={<CardPage />} />
           </Routes>
+          <Footer/> {/* <Footer /> */}
         </>
       </BrowserRouter>
     </div>
+
   );
 }
 
