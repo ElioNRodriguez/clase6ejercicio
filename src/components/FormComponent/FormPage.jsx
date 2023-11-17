@@ -9,13 +9,25 @@ export default function FormPage() {
     email: '',
     telefono: '',
     password: '',
-    confirmPassword: '',
+    confirmPassword: ''    
   });
 
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(datosForm); 
+    e.preventDefault();    
+    alert(JSON.stringify(datosForm, null,2)); 
   };
+
+  const handleConfirm = (e)=>{
+    e.preventDefault();
+    if(datosForm.password == datosForm.confirmPassword){
+      handleSubmit(e);
+    }else{
+      alert("password y confirmar password no coinciden")
+      return false;
+    }
+
+  }
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -23,8 +35,7 @@ export default function FormPage() {
       ...datosForm,
       [name]: value,
     });
-  };
-
+  }; 
 
 
   return (
@@ -32,7 +43,7 @@ export default function FormPage() {
       <div className="body-form">
         <div className="container-form">
           <h1 className="title-form text-light fw-bold">Registrate!</h1>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleConfirm}>
             <div className="form-group">
               <label htmlFor="nombre">Nombre:</label>
               <input type="text" className="form-control" onChange={handleInput} name="nombre" required />
@@ -54,11 +65,11 @@ export default function FormPage() {
               <input type="password" className="form-control" onChange={handleInput} name="password" required />
             </div>
             <div className="form-group">
-              <label htmlFor="password">Confirmar Password :</label>
-              <input type="password" className="form-control" onChange={handleInput} name="password" required />
+              <label htmlFor="confirmPassword">Confirmar Password :</label>
+              <input type="password" className="form-control" onChange={handleInput} name="confirmPassword" required />
             </div>
             <div className="btn-container">
-              <button type="reset" className="btn btn-form"> Reiniciar</button>
+              <button type="reset" className="btn btn-form">Limpiar</button>
               <button type="submit" className="btn btn-form">Enviar</button>
             </div>
           </form>

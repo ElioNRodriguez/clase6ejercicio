@@ -11,8 +11,8 @@ export const Footer = () => {
             <>
                 <div className="footer">
                     <div className="sb_footer section_padding">
-                        <div class="container-fluid">
-                            <div class="footer-content">
+                        <div className="container-fluid">
+                            <div className="footer-content">
                             <div className="links-column">
                                 <h4>Links</h4>
                                 <a href="#">Nuestra historia</a>
