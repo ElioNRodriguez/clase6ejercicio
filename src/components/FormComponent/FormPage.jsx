@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./formPage.css";
+import "./form.css";
 export default function FormPage() {
 
   const [datosForm, setDatosForm] = useState({
