@@ -2,7 +2,7 @@
 export default function MyappEjercicio3(props) {
   return (
     <>
-     <div className="card card-container">
+    <div className="card card-container">
         <img  src="src/assets/images/D_NQ_NP_2X_752236-MLU70660219945_072023-F.jpg" className="card-img-top img-card" alt="..." />
         <div className="card-body">
           <p className="card-text text-title"><span>Nombre:</span> {props.nombre} </p>

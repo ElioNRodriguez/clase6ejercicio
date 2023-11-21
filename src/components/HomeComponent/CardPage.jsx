@@ -1,4 +1,5 @@
 import MyappEjercicio3 from "./MyappEjercicio3";
+import "./card.css";
 
 export default function CardPage() {
   return (

@@ -1,0 +1,36 @@
+/*********************** Navbar **************************/
+.navbar{
+    background-color: #42414f !important;
+
+} 
+
+.nav-link{
+    font-size: larger;
+    border-radius: 8px;
+    background-color: rgb(87, 183, 140);
+    margin-left: 10px ;
+}
+
+.nav-link:hover{
+
+    background-color: rgb(53, 115, 86);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 576px)  {
+.nav-link{
+    text-align: center;
+    font-size: larger;
+    border-radius: 0px;
+    background-color:  #42414f;
+    margin-left: 10px ;
+}
+
+.nav-link:hover{
+
+    background-color: rgb(53, 115, 86);
+    border-radius: 0px;
+}
+
+}
+

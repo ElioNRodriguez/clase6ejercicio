@@ -1,0 +1,68 @@
+/************************************** Card Page ************************************************/
+
+.body-card{
+    background:linear-gradient(90deg,rgb(47, 78, 113),rgb(47, 69, 88));
+}
+
+.main{
+    
+    flex-wrap: wrap;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    border-radius: 15px;
+    width: 400px;
+    display: flex;
+    box-shadow: 5px 5px 14px #000000;
+    margin: 30px 0;
+}
+.text-title{
+    font-size: larger
+}
+
+
+.img-card{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+
+p span{
+    font-weight: 700;
+    font-size: large;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:10px ;
+}
+
+.button{
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 514px)  {
+
+
+
+.card-container{
+    width: 300px;
+}
+
+.img-card{
+    width: 280px;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+}
