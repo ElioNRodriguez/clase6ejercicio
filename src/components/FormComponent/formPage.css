@@ -1,11 +1,9 @@
 /********************************************** Form **************************************/
-
 .body-form{
     height: auto;
     background: linear-gradient(to right, rgb(42, 37, 126), #3878a9);
     font-family: 'Trebuchet MS', sans-serif;
 }
-
 .container-form{ 
     height: auto;
     display: flex;
@@ -13,9 +11,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
-
 form {
     text-align: start;
     min-width:300px;
@@ -30,30 +25,24 @@ form {
     font-weight: 700;
     font-size: 20px;
 }
-
 .form-group{
     padding-top: 8px;
     padding-bottom: 8px;
     
 }
-
 .form-control{
     border-radius:5px !important;
 }
-
 form input {
     border:1px solid #eee;
     border-radius:0 !important;
     padding:5px 8px;
     color:#444;
 }
-
-
 .btn-container{
     display: flex;
     justify-content: space-between;
 }
-
 .btn-form{
     font-size: 18px;
     font-weight: 500;
@@ -63,20 +52,15 @@ form input {
     margin-top:20px;
     border-radius:0px Important;
 }
-
 .btn-form:hover {
     background:rgb(56, 128, 63) !important;
     color: white;
     border: none !important;
 }
-
-
 .title-form{
     font-size: 50px;
 }
-
 @media screen and (min-width: 576px)  {
-
     form {
     text-align: start;
     min-width:400px;

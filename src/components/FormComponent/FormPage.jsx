@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./form.css";
-
+import "./formPage.css";
 
 export default function FormPage() {
 
